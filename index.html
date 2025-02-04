@@ -21,6 +21,8 @@
             max-width: 600px;
             position: relative;
             z-index: 1; /* Ensures container stays below hearts */
+            margin-top: 100px; /* Adds space from top hearts */
+            margin-bottom: 100px; /* Adds space from bottom hearts */
         }
         h1 {
             color: #ff69b4; /* Pink */
@@ -39,20 +41,20 @@
             color: #ff69b4;
             position: absolute;
             width: 100%;
-            top: 50px; /* Adjusted space between hearts at the top */
             left: 0;
             letter-spacing: 25px; /* Increased spacing between hearts */
-            z-index: 2; /* Ensures hearts appear above the container */
+        }
+        .top-hearts {
+            top: -50px; /* Positions hearts above the container */
         }
         .bottom-hearts {
-            top: auto;
-            bottom: 150px; /* Much more space between bottom hearts */
+            bottom: -50px; /* Positions hearts below the container */
             letter-spacing: 35px; /* Increased spacing for bottom hearts */
         }
     </style>
 </head>
 <body>
-    <div class="hearts">
+    <div class="hearts top-hearts">
         💖 💕 💗 💞 💓 💘
     </div>
 
