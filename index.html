@@ -19,6 +19,8 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             display: inline-block;
             max-width: 600px;
+            position: relative;
+            z-index: 2; /* Ensures text stays above hearts */
         }
         h1 {
             color: #ff69b4; /* Pink */
@@ -37,16 +39,13 @@
             color: #ff69b4;
             position: absolute;
             width: 100%;
-            top: 20px;
+            top: 5px;
             left: 0;
+            letter-spacing: 20px; /* Increases spacing between hearts */
         }
-        .hearts span {
-            margin: 0 10px;
-            animation: float 2s infinite alternate;
-        }
-        @keyframes float {
-            from { transform: translateY(0); }
-            to { transform: translateY(-10px); }
+        .bottom-hearts {
+            top: auto;
+            bottom: 5px;
         }
     </style>
 </head>
@@ -64,7 +63,7 @@
         <p class="footer">P.S. I hope this is the first of many Valentine's Days. ❤️</p>
     </div>
 
-    <div class="hearts" style="top: auto; bottom: 20px;">
+    <div class="hearts bottom-hearts">
         💖 💕 💗 💞 💓 💘
     </div>
 </body>
