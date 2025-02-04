@@ -1,34 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Valentine's Day</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-color: #ffe4e1;
-      color: #d63384;
-      margin: 0;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-    h1 {
-      font-size: 3rem;
-      margin: 0.5rem;
-    }
-    p {
-      font-size: 1.5rem;
-      margin: 0.5rem;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Valentine's Day, Maliha!</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #add8e6; /* Light Blue */
+            position: relative;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+            max-width: 600px;
+        }
+        h1 {
+            color: #ff69b4; /* Pink */
+        }
+        p {
+            font-size: 16px;
+            color: #ff69b4; /* Pink */
+        }
+        .footer {
+            margin-top: 20px;
+            font-style: italic;
+            color: #ff1493; /* Darker Pink */
+        }
+        .hearts {
+            font-size: 30px;
+            color: #ff69b4;
+            position: absolute;
+            width: 100%;
+            top: 20px;
+            left: 0;
+        }
+        .hearts span {
+            margin: 0 10px;
+            animation: float 2s infinite alternate;
+        }
+        @keyframes float {
+            from { transform: translateY(0); }
+            to { transform: translateY(-10px); }
+        }
+    </style>
 </head>
 <body>
-  <h1>Happy Valentine's Day Maliha!</h1>
-  <p>I appreciate you so much.</p>
+    <div class="hearts">
+        💖 💕 💗 💞 💓 💘
+    </div>
+
+    <div class="container">
+        <h1>💖 Happy Valentine's Day, Maliha! 💖</h1>
+        <p>Life is definitely better since you entered it, and I'm so happy that I met you.  
+        Getting to know you has been amazing, and it has shown me that you are kind, caring, funny, and so much more.  
+        The past few months have flown by, and I can honestly say each one has been better than the last.  
+        You are someone really special, and I appreciate you!</p>
+        <p class="footer">P.S. I hope this is the first of many Valentine's Days. ❤️</p>
+    </div>
+
+    <div class="hearts" style="top: auto; bottom: 20px;">
+        💖 💕 💗 💞 💓 💘
+    </div>
 </body>
 </html>
